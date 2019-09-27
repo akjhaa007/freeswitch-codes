@@ -6,8 +6,8 @@ import ESL
 def main(argv):
     parser = OptionParser()
     parser.add_option('-a', '--auth', dest='auth', default='ClueCon', help='ESL password')
-    parser.add_option('-s', '--server', dest='server', default='10.50.3.114', help='FreeSWITCH server IP address')
-    parser.add_option('-p', '--port', dest='port', default='8021', help='FreeSWITCH server event socket port')
+    parser.add_option('-s', '--server', dest='server', default='34.220.205.175', help='FreeSWITCH server IP address')
+    parser.add_option('-p', '--port', dest='port', default='5060', help='FreeSWITCH server event socket port')
     parser.add_option('-c', '--command', dest='command', default='status', help='command to run, surround multi-word commands in ""s')
 
     (options, args) = parser.parse_args()
@@ -49,5 +49,4 @@ def main(argv):
         print(e.nextHeader())
 
 if __name__ == '__main__':
-    main(sys.argv[1:])
-
+    main(sys.argv[1:]
